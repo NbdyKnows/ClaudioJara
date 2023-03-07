@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Tahoma;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background: darkblue;
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+#logo{
+    float: left;
+}
+
+.botonera{
+    float: right;
+}
+
+.botonera ul{
+    display: flex;
+    list-style: none;
+}
+
+.botonera a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+/**Estilos para el banner*/
+
+.banner{
+    position: relative;
+    background: url(../img/banner.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.content-banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+.overlay{
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.content-banner h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+main{
+    width: 80%;
+    margin: 20px auto;
+}
+
+main h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.img-responsive{
+    width: 400px;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+section{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article{
+    width: 350px;
+}
+
+article h2{
+    margin-bottom: 10px;
+    color: darkblue;
+}
+
+article img{
+    width: 100%;
+}
+
+/**Estilos para BANNER Tablets*/
+
+@media only screen and (max-width:980px) {
+    .container, .content-banner, main, section{
+        width: 90%;
+    }  
+}
+
+/**Estilos para BANNER Celular*/
+
+@media only screen and (max-width:480px) {
+    .container, .content-banner, main, section{
+        width: 98%;
+    }  
+}

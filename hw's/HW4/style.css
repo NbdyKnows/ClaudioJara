@@ -1,0 +1,52 @@
+body{
+	font-family:Tahoma;
+	font-size:12px;
+	background: #9A9595;
+}
+
+.formulario{
+	border:solid 2px #b7ddf2;
+	background:#b7ddf2;
+	margin: 0 auto;
+	width:600px;
+	padding:14px;
+}
+
+h1{
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom:8px;
+}
+
+#linea{
+	color:#666666;
+	margin-bottom:30px;
+	border-bottom:solid 1px #fff;
+	padding-bottom:5px;
+}
+
+label{
+    display:block;
+	font-weight:bold;
+	width:240px;
+	font-size:12px;
+}
+
+.e_civil{
+	margin: 13px auto;
+}
+
+select{
+	display:block;
+	font-weight:bold;
+	width:240px;
+	font-size:12px;
+}
+
+#prov{
+	width: 177px ;
+}
+
+.botones{
+	margin-top: 15px;
+}

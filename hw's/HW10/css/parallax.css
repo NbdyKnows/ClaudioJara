@@ -1,0 +1,27 @@
+.fondo-parallax{
+    background: url(../img/futbol.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px 0px;
+}
+
+.parallax{
+    width: 80%;
+    margin: auto;
+    color: white;
+}
+
+
+@media only screen and (max-width:980px) {
+    .parallax{
+        width: 90%;
+    }  
+}
+
+@media only screen and (max-width:480px) {
+    .parallax{
+        width: 98%;
+    }  
+}

@@ -1,0 +1,92 @@
+.fondo-contacto{
+    background: url(../img/brouchre.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px 0px;
+}
+
+.text-contacto{
+    text-align: center;
+    color: white;
+}
+
+.contactos{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact h3{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.listas li{
+    list-style-image: url(../img/buena.png);
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.formulario{
+    background: orange;
+    color: white;
+    padding: 10px;
+}
+
+.formulario h3{
+    text-align: center;
+    color: black;
+}
+
+.contact h3{
+    text-align: center;
+}
+
+.contact p{
+    color: black;
+}
+
+input[type="text"],input[type="number"]{
+    width: 100%;
+    height: 35px;
+}
+
+textarea{
+    width: 100%;
+}
+
+input[type="text"],input[type="number"], textarea :focus{
+    outline: 0 none;
+}
+
+input[type="submit"]{
+    width: 300px;
+    background: black;
+    padding: 10px;
+    color: white;
+}
+
+/**Mediaquery para Tablets*/
+
+@media only screen and (max-width:980px){
+    .contactos{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .contactos{
+        width: 98%;
+    }
+    .contact{
+        width: 100%;
+    }
+    .listas li{
+        margin-left: 30px;
+    }
+}

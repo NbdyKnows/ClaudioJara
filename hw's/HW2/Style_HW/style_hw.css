@@ -1,0 +1,38 @@
+body{
+    margin:20px;
+    background: #ECE6E6;
+}
+
+h1, h3{
+    font-family:Comic Sans MS;
+}
+
+p{
+    font-family: Calibri Light;
+    text-align: justify;
+    font-size:120%;
+}
+
+a{
+    text-decoration: none;
+    color:black;	
+}
+
+img{
+    width:100%;
+    max-width:800px;
+}
+
+.ico{
+    width:50px;
+    height:50px;
+    padding:20px;
+}
+
+@media screen and (max-width: 480px) {
+    
+    h3{
+        font-size: 4vw;
+    }
+
+}
