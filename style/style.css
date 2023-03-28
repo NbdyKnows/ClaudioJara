@@ -3,35 +3,173 @@ html{
 }
 
 header{
-    width: 100%;
-    display: flex;
-    float: right;
-    align-items: center;
     position: fixed;
-}
-.container{
-    width: 80%;
-    display: flex;
-    justify-content: end;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding: 0 2rem;
+    font-family: 'Montserrat', sans-serif;
+    --background: transparent;
+    --text: #f4f4f4;
+    --text-inverse: #333;
+    --underline:white;
+    background: var(--background);
+    transition: background 0.25s ease-in-out;
 }
 
+header a{
+    text-decoration: none;
+    color: var(--text);
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.nav_scrolled{
+    --background: #f4f4f4;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    --text: #333;
+    --text-inverse: #f4f4f4;
+    --underline: #001214;
+    text-shadow: 1px 1px 2px #7c7974, 0 0 0.5em #7c7974, 0 0 0.5em #f4f4f4;
+    font-weight: bold;
+}
 .nav_bar{
-    height: 30px;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
 }
 
 .nav_bar a{
-    margin: 0px 15px;
-    color: black;
-    text-decoration: none;
+    position: relative;
+    padding: 0 10px;
+}
+
+.nav_bar a:after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 1em;
+    right: 1em;
+    height: 3px;
+    background: var(--underline);
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.nav_bar a:hover{
+    text-shadow: 1px 1px 2px var(--text), 0 0 1em var(--text), 0 0 0.2em var(--text);
+}
+
+.nav_bar a:hover:after{
+    -webkit-transform: scaleX(1.14);
+            transform: scaleX(1.14);
+}
+
+
+.nav_bar .nombre{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text);
+}
+
+.nav_bar .navegation{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+button{
+    border-style: none;
+    margin-right: 7px;
+    background: transparent;
+    color: var(--text);
+}
+
+.nav_bar .hamburguer{
+    cursor: pointer;
+    display: none;
+    padding: 0;
+    width: 15px;
+    background: transparent;
+}
+
+.hamburguer .line{
+    transition: 
+    y 300ms ease-in 300ms,
+    rotate 300ms ease-in;
+    opacity: 0ms 300ms;
+    ;
+    transform-origin: center;
+}
+
+.hamburguer[aria-expanded="true"] .line{
+    transition: 
+    y 300ms ease-in,
+    rotate 300ms ease-in 300ms;
+    opacity: 0ms 300ms;
+    ;
+    
+}
+
+.hamburguer[aria-expanded="true"] :is(.top, .bottom){
+    y: 45;
+}
+
+.hamburguer[aria-expanded="true"] .top{
+    rotate: 45deg;
+}
+
+.hamburguer[aria-expanded="true"] .middle{
+    opacity: 0;
+}
+
+.hamburguer[aria-expanded="true"] .bottom{
+    rotate: -45deg;
+}
+
+
+.dropdown_menu{
+    display: none;
+    position: fixed;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 116px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #inicio{
     height: 100svh;
     width: 100%;
-    background: #446786;
+    background: #002429;
+    /*#446786*/
     display: flex;
     align-items: center;
 }
@@ -44,7 +182,8 @@ header{
 .contenido_inicio{
     display: flex;
     width: 80%;
-    margin: auto;
+    margin: 70px auto;
+    padding-top: 10px;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -55,11 +194,18 @@ header{
 }
 
 .presentacion{
+    display: flex;
+    flex-direction: column;
     font: sans-serif;
     font-size: 18px;
     color: white;
+    margin-left: 10%;
 }
 
+.presentacion h2{
+    margin-bottom: 7rem;
+}
+/*
 #portafolio{
     height: 100svh;
     width: 100%;
@@ -68,10 +214,26 @@ header{
     align-items: center;
     justify-content: center;
 }
-
-#hw{
+*/
+.hw{
     width: 100%;
-    background: #e8e9f3;
+    background: #113642;
+}
+
+.contenedor_tareas{
+    display: grid;
+    justify-content: center;
+}
+
+.t_taras{
+    margin-top: 90px;
+    display: flex;
+    justify-self: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 25px;
+    font-size: 2rem;
 }
 
 .tareas{
@@ -81,6 +243,8 @@ header{
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 30px;
+    align-items: flex-end;
+    
 }
 
 .tarea{
@@ -124,6 +288,107 @@ header{
     width: 100%;
     background: #7c7974;
     display: flex;
-    align-items: center;
     justify-content: center;
+}
+
+.contenido_contac{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.descripciones .datos{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.descripciones{
+    font-family: 'Lilita One', cursive;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.datos{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.datos a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 850px){
+    .nav_bar{
+        position: fixed;
+    }
+    .nav_bar .navegation{
+        display: none;
+    }
+
+    .nav_bar .hamburguer{
+        display: block;
+        width: 100px;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+    .tareas{
+        flex-flow:  wrap;
+        align-content: space-between;
+    }
+    .tarea{
+        width: 45%;
+    }
+}
+
+@media (max-width: 576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+
+    .contenido_inicio{
+        display: flex;
+        width: 100%;
+        margin: 60px auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .presentacion{
+        display: flex;
+        width: 80%;
+        margin: 60px auto;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .presentacion h2{
+        margin-bottom: 2rem;
+    }
+
+
+    .tareas{
+        flex-direction: column;
+        align-content: center;
+    }
+    .tarea{
+        width: 100%;
+    }
+    .contenido_contac{
+        width: 100%;
+        height: 100%;
+    }
 }

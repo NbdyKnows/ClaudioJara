@@ -7,146 +7,186 @@
     <title>Claudio Jara</title>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat+Alternates&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
     <header>
-        
-        <div class="container">
-            <nav class="nav_bar">
-                <a href="#inicio">INICIO</a>
-                <a href="#portafolio">PORTAFOLIO</a>
-                <a href="#hw">TAREAS</a>
-                <a href="#contacto">CONTACTO</a>
-            </nav>
+        <nav class="nav_bar">
+            <h1 class="nombre">Claudio Jara</h1>
+            <ul class="navegation">
+                <li><a href="#inicio">PRESENTACIÓN</a></li>
+                <!--<li><a href="#portafolio">PORTAFOLIO</a></li>-->
+                <li><a href="#hw">TAREAS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+            <button class="hamburguer" aria-controls="primary-navigation" aria-expanded="false">
+                <svg  fill="var(--text)" class="hamburguesa" viewBox="0 0 100 100" width="35px">
+                    <rect class="line top" 
+                    width="80" height="10" x="10" y="20" rx="5"
+                    ></rect>
+                    <rect class="line middle" 
+                    width="80" height="10" x="10" y="45" rx="5"
+                    ></rect>
+                    <rect class="line bottom" 
+                    width="80" height="10" x="10" y="70" rx="5"
+                    ></rect>
+                </svg>
+            </button>
+        </nav>
+
+        <div class="dropdown_menu">
+            <ul class="navegation">
+                <li><a href="#inicio">PRESENTACIÓN</a></li>
+                <!--<li><a href="#portafolio">PORTAFOLIO</a></li>-->
+                <li><a href="#hw">TAREAS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
         </div>
     </header>
 
-<!--* Here goes the -->
-    
-
     <main>
-        <div id="inicio">
-
+        
+        <div id="inicio" class="inicio">
             <div class="switch-lenguaje">
-                <p>idioma</p>
+                <p></p>
             </div>
 
             <div class="contenido_inicio">
                 
-                <img src="img/Foto_Port.png" alt="">
+                <img src="img/try_1.jpeg" alt="">
+                
                 <div class="presentacion">
-                    <p>Hola, mi nombre es Claudio Jara Almonacid.</p>
-                    <p>Soy un estudiante de Desarrollo de Sistemas de Información en Idat</p>
+                    <h2 class="txt_presentacion">HOLA! ^^</h2>
+                    <p class="txt_presentacion">Mi nombre es Claudio Jara Almonacid.</p>
+                    <p class="txt_presentacion">Soy un estudiante de Desarrollo de Sistemas de Información en Idat 
+                        cursando el 4to ciclo de su carrera, con amplia experiencai en el trabajo en equipo así como las tecnologáis de Python, C# y conexión a redes</p>
                 </div>
             </div>
         </div>
 
+        <!--
         <div id="portafolio">
             <p>AQUÍ IRÁ PORTAFOLIO</p>
         </div>
+        -->
 
-        <div id="hw">
-            <div class="tareas">
-                <div class="tarea">
-                    <a href="hw's/HW0/S00.html" target="_blank">
-                        <img src="img/HW's/HW0.png" alt="" class="img_hw"></a>
-                    <div class="desc_hw">
-                        <a href="hw's/HW0/S00.html" target="_blank">Tarea 0</a>
+        <div class="hw">
+            <p type="hidden">.</p>
+            <div id="hw"></div>
+            <div class="contenedor_tareas">
+                <h2 class="t_taras">TAREAS</h2>
+                <nav class="tareas">
+                    <div class="tarea">
+                        <a href="hw's/HW0/S00.html" target="_blank">
+                            <img src="img/HW's/HW0.png" alt="" class="img_hw"></a>
+                        <div class="desc_hw">
+                            <a href="hw's/HW0/S00.html" target="_blank">Tarea 0</a>
+                        </div>
                     </div>
-                </div>
-                <div class="tarea">
-                    <a href="hw's/HW1/S01.html" target="_blank">
-                        <img src="img/HW's/HW1.png" alt="" class="img_hw"></a>
-                    <div class="desc_hw">
-                        <a href="hw's/HW1/S01.html" target="_blank">Tarea 1</a>
+                    <div class="tarea">
+                        <a href="hw's/HW1/S01.html" target="_blank">
+                            <img src="img/HW's/HW1.png" alt="" class="img_hw"></a>
+                        <div class="desc_hw">
+                            <a href="hw's/HW1/S01.html" target="_blank">Tarea 1</a>
+                        </div>
                     </div>
-                </div>
-                <div class="tarea">
-                    <a href="hw's/HW2/Geografía.html" target="_blank">
-                        <img src="img/HW's/HW2.png" alt="" class="img_hw"></a>
-                    <div class="desc_hw">
-                        <a href="hw's/HW2/Geografía.html" target="_blank">Tarea 2</a>
+                    <div class="tarea">
+                        <a href="hw's/HW2/Geografía.html" target="_blank">
+                            <img src="img/HW's/HW2.png" alt="" class="img_hw"></a>
+                        <div class="desc_hw">
+                            <a href="hw's/HW2/Geografía.html" target="_blank">Tarea 2</a>
+                        </div>
                     </div>
-                </div>
-                <div class="tarea">
-                    <a href="hw's/HW3/index.html" target="_blank">
-                        <img src="img/HW's/HW3.png" alt="" class="img_hw"></a>
-                    <div class="desc_hw">
-                        <a href="hw's/HW3/index.html" target="_blank">Tarea 3</a>
+                    <div class="tarea">
+                        <a href="hw's/HW3/index.html" target="_blank">
+                            <img src="img/HW's/HW3.png" alt="" class="img_hw"></a>
+                        <div class="desc_hw">
+                            <a href="hw's/HW3/index.html" target="_blank">Tarea 3</a>
+                        </div>
                     </div>
-                </div>
-                <div class="tarea">
-                    <a href="hw's/HW4/index.html" target="_blank">
-                        <img src="img/HW's/HW4.png" alt="" class="img_hw"></a>
-                    <div class="desc_hw">
-                        <a href="hw's/HW4/index.html" target="_blank">Tarea 4</a>
+                    <div class="tarea">
+                        <a href="hw's/HW4/index.html" target="_blank">
+                            <img src="img/HW's/HW4.png" alt="" class="img_hw"></a>
+                        <div class="desc_hw">
+                            <a href="hw's/HW4/index.html" target="_blank">Tarea 4</a>
+                        </div>
                     </div>
-                </div>
-                <div class="tarea">
-                    <a href="hw's/HW5/index.html" target="_blank">
-                        <img src="img/HW's/HW5.png" alt="" class="img_hw"></a>
-                    <div class="desc_hw">
-                        <a href="hw's/HW5/index.html" target="_blank">Tarea 5</a>
+                    <div class="tarea">
+                        <a href="hw's/HW5/index.html" target="_blank">
+                            <img src="img/HW's/HW5.png" alt="" class="img_hw"></a>
+                        <div class="desc_hw">
+                            <a href="hw's/HW5/index.html" target="_blank">Tarea 5</a>
+                        </div>
                     </div>
-                </div>
-                <div class="tarea">
-                    <a href="hw's/HW6/index.html" target="_blank">
-                        <img src="img/HW's/HW6.png" alt="" class="img_hw"></a>
-                    <div class="desc_hw">
-                        <a href="hw's/HW6/index.html" target="_blank">Tarea 6</a>
+                    <div class="tarea">
+                        <a href="hw's/HW6/index.html" target="_blank">
+                            <img src="img/HW's/HW6.png" alt="" class="img_hw"></a>
+                        <div class="desc_hw">
+                            <a href="hw's/HW6/index.html" target="_blank">Tarea 6</a>
+                        </div>
                     </div>
-                </div>
-                <div class="tarea">
-                    <a href="hw's/HW7/columnas.html" target="_blank">
-                        <img src="img/HW's/HW7.png" alt="" class="img_hw"></a>
-                    <div class="desc_hw">
-                        <a href="hw's/HW7/columnas.html" target="_blank">Tarea 7</a>
+                    <div class="tarea">
+                        <a href="hw's/HW7/columnas.html" target="_blank">
+                            <img src="img/HW's/HW7.png" alt="" class="img_hw"></a>
+                        <div class="desc_hw">
+                            <a href="hw's/HW7/columnas.html" target="_blank">Tarea 7</a>
+                        </div>
                     </div>
-                </div>
-                <div class="tarea">
-                    <a href="hw's/HW8/index.html" target="_blank">
-                        <img src="img/HW's/HW8.png" alt="" class="img_hw"></a>
-                    <div class="desc_hw">
-                        <a href="hw's/HW8/index.html" target="_blank">Tarea 8</a>
+                    <div class="tarea">
+                        <a href="hw's/HW8/index.html" target="_blank">
+                            <img src="img/HW's/HW8.png" alt="" class="img_hw"></a>
+                        <div class="desc_hw">
+                            <a href="hw's/HW8/index.html" target="_blank">Tarea 8</a>
+                        </div>
                     </div>
-                </div>
-                <div class="tarea">
-                    <a href="hw's/HW9/index.html" target="_blank">
-                        <img src="img/HW's/HW9.png" alt="" class="img_hw"></a>
-                    <div class="desc_hw">
-                        <a href="hw's/HW9/index.html" target="_blank">Tarea 9</a>
+                    <div class="tarea">
+                        <a href="hw's/HW9/index.html" target="_blank">
+                            <img src="img/HW's/HW9.png" alt="" class="img_hw"></a>
+                        <div class="desc_hw">
+                            <a href="hw's/HW9/index.html" target="_blank">Tarea 9</a>
+                        </div>
                     </div>
-                </div>
-                <div class="tarea">
-                    <a href="hw's/HW10/index.html" target="_blank">
-                        <img src="img/HW's/HW10.png" alt="" class="img_hw"></a>
-                    <div class="desc_hw">
-                        <a href="hw's/HW10/index.html" target="_blank">Tarea 10</a>
+                    <div class="tarea">
+                        <a href="hw's/HW10/index.html" target="_blank">
+                            <img src="img/HW's/HW10.png" alt="" class="img_hw"></a>
+                        <div class="desc_hw">
+                            <a href="hw's/HW10/index.html" target="_blank">Tarea 10</a>
+                        </div>
                     </div>
-                </div>
-                <div class="tarea">
-                    <a href="hw's/HW11/index.html" target="_blank">
-                        <img src="img/HW's/HW11.png" alt="" class="img_hw"></a>
-                    <div class="desc_hw">
-                        <a href="hw's/HW11/index.html" target="_blank">Tarea 11</a>
+                    <div class="tarea">
+                        <a href="hw's/HW11/index.html" target="_blank">
+                            <img src="img/HW's/HW11.png" alt="" class="img_hw"></a>
+                        <div class="desc_hw">
+                            <a href="hw's/HW11/index.html" target="_blank">Tarea 11</a>
+                        </div>
                     </div>
-                </div>
+                </nav>
+                
             </div>
         </div>
 
-        <div id="contacto">
-            <p>AQUÍ IRÁ CONTACTO</p>
-        </div>
-
-
+        
     </main>
-
-
-    <footer>
-
+    <footer id="contacto">
+        
+            <div class="contenido_contac">
+                <div class="descripciones">
+                    <p>Correo</p>
+                    <p>Linkedin</p>
+                    <p>Github</p>
+                </div>
+                <div class="datos">
+                    <p>AT70392439@idat.edu.pe</p>
+                    <p><a href="https://www.linkedin.com/in/claudio-jara-almonacid/" target="_blank">ClaudioJara</a></p>
+                    <p><a href="https://github.com/NbdyKnows" target="_blank">NbdyKnows</a></p>
+                </div>
+            </div>
+        
     </footer>
 
-
+    <script src="script/header.js"></script>
 </body>
 </html>
