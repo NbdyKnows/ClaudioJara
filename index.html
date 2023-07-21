@@ -1,361 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claudio Jara</title>
-    <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/inicio.css">
-    <link rel="stylesheet" href="style/tareas.css">
-    <link rel="stylesheet" href="style/contacto.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Claudio Jara</title>
+        <link rel="stylesheet" href="style/reset.css" />
+        <link rel="stylesheet" href="style/style.css" />
+        <link rel="stylesheet" href="style/header.css" />
+        <link rel="stylesheet" href="style/inicio.css" />
+        <link rel="stylesheet" href="style/tareas.css" />
+        <link rel="stylesheet" href="style/contacto.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat+Alternates&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav class="nav_bar">
-            <h1 class="nombre"><span aria-hidden="true">Claudio Jara</span>
-                Claudio Jara
-                <span aria-hidden="true">Claudio Jara</span></h1>
-            <ul class="navegation">
-                <li><a href="#inicio">PRESENTACIÓN</a></li>
-                <!--<li><a href="#portafolio">PORTAFOLIO</a></li>-->
-                <li><a href="#hw">TAREAS</a></li>
-                <li><a href="#contacto">CONTACTO</a></li>
-            </ul>
-            <button class="hamburguer" aria-controls="primary-navigation" aria-expanded="false">
-                <svg  fill="var(--text)" class="hamburguesa" viewBox="0 0 100 100" width="35px">
-                    <rect class="line top" 
-                    width="80" height="10" x="10" y="20" rx="5"
-                    ></rect>
-                    <rect class="line middle" 
-                    width="80" height="10" x="10" y="45" rx="5"
-                    ></rect>
-                    <rect class="line bottom" 
-                    width="80" height="10" x="10" y="70" rx="5"
-                    ></rect>
-                </svg>
-            </button>
-        </nav>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat+Alternates&family=Montserrat:wght@400;800&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <nav class="nav_bar">
+                <h1 class="nombre">
+                    <span aria-hidden="true">Claudio Jara</span>
+                    Claudio Jara
+                    <span aria-hidden="true">Claudio Jara</span>
+                </h1>
+                <ul class="navegation">
+                    <li><a href="#inicio">PRESENTACIÓN</a></li>
+                    <!--<li><a href="#portafolio">PORTAFOLIO</a></li>-->
+                    <li><a href="#hw">TAREAS</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                </ul>
+                <button
+                    class="hamburguer"
+                    aria-controls="primary-navigation"
+                    aria-expanded="false"
+                >
+                    <svg
+                        fill="var(--text)"
+                        class="hamburguesa"
+                        viewBox="0 0 100 100"
+                        width="35px"
+                    >
+                        <rect
+                            class="line top"
+                            width="80"
+                            height="10"
+                            x="10"
+                            y="20"
+                            rx="5"
+                        ></rect>
+                        <rect
+                            class="line middle"
+                            width="80"
+                            height="10"
+                            x="10"
+                            y="45"
+                            rx="5"
+                        ></rect>
+                        <rect
+                            class="line bottom"
+                            width="80"
+                            height="10"
+                            x="10"
+                            y="70"
+                            rx="5"
+                        ></rect>
+                    </svg>
+                </button>
+            </nav>
 
-        <div class="dropdown_menu">
-            <ul class="navegation">
-                <li><a href="#inicio">PRESENTACIÓN</a></li>
-                <!--<li><a href="#portafolio">PORTAFOLIO</a></li>-->
-                <li><a href="#hw">TAREAS</a></li>
-                <li><a href="#contacto">CONTACTO</a></li>
-            </ul>
-        </div>
-    </header>
-
-    <main>
-        
-        <div id="inicio" class="inicio">
-            <div class="switch-lenguaje">
-                <p></p>
+            <div class="dropdown_menu">
+                <ul class="navegation">
+                    <li><a href="#inicio">PRESENTACIÓN</a></li>
+                    <!--<li><a href="#portafolio">PORTAFOLIO</a></li>-->
+                    <li><a href="#hw">TAREAS</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                </ul>
             </div>
+        </header>
 
-            <div class="contenido_inicio">
-                
-                <img src="img/try_1.jpeg" alt="">
-                
-                <div class="presentacion">
-                    <h2 class="txt_presentacion">HOLA! ^^</h2>
-                    <p class="txt_presentacion">Mi nombre es Claudio Jara Almonacid.</p>
-                    <p class="txt_presentacion">Soy un estudiante de Desarrollo de Sistemas de Información en Idat 
-                        cursando el 4to ciclo de su carrera, con amplia experiencai en el trabajo en equipo así como las tecnologáis de Python, C# y conexión a redes</p>
+        <main>
+            <div id="inicio" class="inicio">
+                <div class="switch-lenguaje">
+                    <p></p>
+                </div>
+
+                <div class="contenido_inicio">
+                    <img src="img/try_1.jpeg" alt="" />
+
+                    <div class="presentacion">
+                        <h2 class="txt_presentacion">HOLA! ^^</h2>
+                        <p class="txt_presentacion">
+                            Mi nombre es Claudio Jara Almonacid.
+                        </p>
+                        <p class="txt_presentacion">
+                            Soy un estudiante de Desarrollo de Sistemas de
+                            Información en Idat cursando el 5to ciclo de su
+                            carrera, con amplia experienca en el trabajo en
+                            equipo así como las tecnologías de Python, Java,
+                            HTML, CSS, JavaScript, C# y conexión a redes. Manejo
+                            de la libreria React, del framework .NET y del
+                            framwork Springboot
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!--
+            <!--
         <div id="portafolio">
             <p>AQUÍ IRÁ PORTAFOLIO</p>
         </div>
         -->
 
-        <div class="hw">
-            <p type="hidden">.</p>
-            <div id="hw"></div>
+            <div class="hw">
+                <p type="hidden">.</p>
+                <div id="hw"></div>
 
-            <div class="contenedor_tareas">
-                <h2 class="t_taras">TAREAS</h2>
-            </div>
-                <div class="container__card">
-
-                    <div class="card__father">
-                        <div class="card">
-                            <div class="card__front" style="background-image: url(img/HW/HW0.png);">
-                                <div class="bg"></div>
-                                <div class="body__card_front">
-                                    <h1>Tarea 0</h1>
-                                </div>
-                            </div>
-                            <div class="card__back">
-                                <div class="body__card_back">
-                                    <h1>Tarea 0</h1>
-                                    <p>En esta tarea iniciamos nuestro mundo Web.</p>
-                                    <form action="hw's/HW0/S00.html" target="_blank">
-                                        <input type="submit" value="Abrir" >
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="card__father">
-                        <div class="card">
-                            <div class="card__front" style="background-image: url(img/HW/HW1.png);">
-                                <div class="bg"></div>
-                                <div class="body__card_front">
-                                    <h1>Tarea 1</h1>
-                                </div>
-                            </div>
-                            <div class="card__back">
-                                <div class="body__card_back">
-                                    <h1>Tarea 1</h1>
-                                    <p>En esta tarea aprendimos listas UL y OL.</p>
-                                    <form action="hw's/HW1/S01.html" target="_blank">
-                                        <input type="submit" value="Abrir" >
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <div class="card__father">
-                        <div class="card">
-                            <div class="card__front" style="background-image: url(img/HW/HW2.png);">
-                                <div class="bg"></div>
-                                <div class="body__card_front">
-                                    <h1>Tarea 2</h1>
-                                </div>
-                            </div>
-                            <div class="card__back">
-                                <div class="body__card_back">
-                                    <h1>Tarea 2</h1>
-                                    <p>En esta tarea aprendimos a subir nuestro HTML.</p>
-                                    <form action="hw's/HW2/Geografía.html" target="_blank">
-                                        <input type="submit" value="Abrir" >
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="card__father">
-                        <div class="card">
-                            <div class="card__front" style="background-image: url(img/HW/HW3.png);">
-                                <div class="bg"></div>
-                                <div class="body__card_front">
-                                    <h1>Tarea 3</h1>
-                                </div>
-                            </div>
-                            <div class="card__back">
-                                <div class="body__card_back">
-                                    <h1>Tarea 3</h1>
-                                    <p>Aquí creamos una pg donde unimos todo lo aprendido hasta el momento.</p>
-                                    <form action="hw's/HW3/index.html" target="_blank">
-                                        <input type="submit" value="Abrir" >
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="card__father">
-                        <div class="card">
-                            <div class="card__front" style="background-image: url(img/HW/HW4.png);">
-                                <div class="bg"></div>
-                                <div class="body__card_front">
-                                    <h1>Tarea 4</h1>
-                                </div>
-                            </div>
-                            <div class="card__back">
-                                <div class="body__card_back">
-                                    <h1>Tarea 4</h1>
-                                    <p>Aquí creamos un formulario simple usando inputs.</p>
-                                    <form action="hw's/HW4/index.html" target="_blank">
-                                        <input type="submit" value="Abrir" >
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="card__father">
-                        <div class="card">
-                            <div class="card__front" style="background-image: url(img/HW/HW5.png);">
-                                <div class="bg"></div>
-                                <div class="body__card_front">
-                                    <h1>Tarea 5</h1>
-                                </div>
-                            </div>
-                            <div class="card__back">
-                                <div class="body__card_back">
-                                    <h1>Tarea 5</h1>
-                                    <p>Aquí creamos un formulario responsive usando "%" en el width.</p>
-                                    <form action="hw's/HW5/index.html" target="_blank">
-                                        <input type="submit" value="Abrir" >
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="card__father">
-                        <div class="card">
-                            <div class="card__front" style="background-image: url(img/HW/HW6.png);">
-                                <div class="bg"></div>
-                                <div class="body__card_front">
-                                    <h1>Tarea 6</h1>
-                                </div>
-                            </div>
-                            <div class="card__back">
-                                <div class="body__card_back">
-                                    <h1>Tarea 6</h1>
-                                    <p>Aquí aprenimos de lo básico de Bootstrap 5.0</p>
-                                    <form action="hw's/HW6/index.html" target="_blank">
-                                        <input type="submit" value="Abrir" >
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="card__father">
-                        <div class="card">
-                            <div class="card__front" style="background-image: url(img/HW/HW7.png);">
-                                <div class="bg"></div>
-                                <div class="body__card_front">
-                                    <h1>Tarea 7</h1>
-                                </div>
-                            </div>
-                            <div class="card__back">
-                                <div class="body__card_back">
-                                    <h1>Tarea 7</h1>
-                                    <p>Aquí usamos columnas en Boostrap 5.0 y el efecto Parallax</p>
-                                    <form action="hw's/HW7/columnas.html" target="_blank">
-                                        <input type="submit" value="Abrir" >
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="card__father">
-                        <div class="card">
-                            <div class="card__front" style="background-image: url(img/HW/HW8.png);">
-                                <div class="bg"></div>
-                                <div class="body__card_front">
-                                    <h1>Tarea 8</h1>
-                                </div>
-                            </div>
-                            <div class="card__back">
-                                <div class="body__card_back">
-                                    <h1>Tarea 8</h1>
-                                    <p>Aquí profundizamos en el uso de columnas en Boostrap 5.0 y colores</p>
-                                    <form action="hw's/HW8/index.html" target="_blank">
-                                        <input type="submit" value="Abrir" >
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="card__father">
-                        <div class="card">
-                            <div class="card__front" style="background-image: url(img/HW/HW9.png);">
-                                <div class="bg"></div>
-                                <div class="body__card_front">
-                                    <h1>Tarea 9</h1>
-                                </div>
-                            </div>
-                            <div class="card__back">
-                                <div class="body__card_back">
-                                    <h1>Tarea 9</h1>
-                                    <p>Aquí usamos Bootstrap en una forma más completa.</p>
-                                    <form action="hw's/HW9/index.html" target="_blank">
-                                        <input type="submit" value="Abrir" >
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="card__father">
-                        <div class="card">
-                            <div class="card__front" style="background-image: url(img/HW/HW10.png);">
-                                <div class="bg"></div>
-                                <div class="body__card_front">
-                                    <h1>Tarea 10</h1>
-                                </div>
-                            </div>
-                            <div class="card__back">
-                                <div class="body__card_back">
-                                    <h1>Tarea 10</h1>
-                                    <p>Aquí hacemos una página completa unicamente con CSS.</p>
-                                    <form action="hw's/HW10/index.html" target="_blank">
-                                        <input type="submit" value="Abrir" >
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="card__father">
-                        <div class="card">
-                            <div class="card__front" style="background-image: url(img/HW/HW11.png);">
-                                <div class="bg"></div>
-                                <div class="body__card_front">
-                                    <h1>Tarea 11</h1>
-                                </div>
-                            </div>
-                            <div class="card__back">
-                                <div class="body__card_back">
-                                    <h1>Tarea 11</h1>
-                                    <p>Aquí hacemos una página completa donde usamos JS.</p>
-                                    <form action="hw's/HW11/index.html" target="_blank">
-                                        <input type="submit" value="Abrir" >
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card__father">
-                        <div class="card">
-                            <div class="card__front" style="background-image: url(img/HW/HW12.png);">
-                                <div class="bg"></div>
-                                <div class="body__card_front">
-                                    <h1>Tarea 12</h1>
-                                </div>
-                            </div>
-                            <div class="card__back">
-                                <div class="body__card_back">
-                                    <h1>Tarea 12</h1>
-                                    <p>Aquí hacemos una página completa donde usamos JS.</p>
-                                    <form action="https://claudiojara.000webhostapp.com/index.html" target="_blank">
-                                        <input type="submit" value="Abrir" >
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
+                <div class="contenedor_tareas">
+                    <h2 class="t_taras">TAREAS</h2>
                 </div>
-                
-            </div>
+                <div class="container__card">
+                    <div class="card__father">
+                        <div class="card">
+                            <div
+                                class="card__front"
+                                style="background-image: url(img/HW/HW0.png)"
+                            >
+                                <div class="bg"></div>
+                                <div class="body__card_front">
+                                    <h1>Tarea 0</h1>
+                                </div>
+                            </div>
+                            <div class="card__back">
+                                <div class="body__card_back">
+                                    <h1>Tarea 0</h1>
+                                    <p>
+                                        En esta tarea iniciamos nuestro mundo
+                                        Web.
+                                    </p>
+                                    <form
+                                        action="hw's/HW0/S00.html"
+                                        target="_blank"
+                                    >
+                                        <input type="submit" value="Abrir" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-        
-    </main>
-    <footer id="contacto">
-        
+                    <div class="card__father">
+                        <div class="card">
+                            <div
+                                class="card__front"
+                                style="background-image: url(img/HW/HW1.png)"
+                            >
+                                <div class="bg"></div>
+                                <div class="body__card_front">
+                                    <h1>Tarea 1</h1>
+                                </div>
+                            </div>
+                            <div class="card__back">
+                                <div class="body__card_back">
+                                    <h1>Tarea 1</h1>
+                                    <p>
+                                        En esta tarea aprendimos listas UL y OL.
+                                    </p>
+                                    <form
+                                        action="hw's/HW1/S01.html"
+                                        target="_blank"
+                                    >
+                                        <input type="submit" value="Abrir" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__father">
+                        <div class="card">
+                            <div
+                                class="card__front"
+                                style="background-image: url(img/HW/HW2.png)"
+                            >
+                                <div class="bg"></div>
+                                <div class="body__card_front">
+                                    <h1>Tarea 2</h1>
+                                </div>
+                            </div>
+                            <div class="card__back">
+                                <div class="body__card_back">
+                                    <h1>Tarea 2</h1>
+                                    <p>
+                                        En esta tarea aprendimos a subir nuestro
+                                        HTML.
+                                    </p>
+                                    <form
+                                        action="hw's/HW2/Geografía.html"
+                                        target="_blank"
+                                    >
+                                        <input type="submit" value="Abrir" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__father">
+                        <div class="card">
+                            <div
+                                class="card__front"
+                                style="background-image: url(img/HW/HW3.png)"
+                            >
+                                <div class="bg"></div>
+                                <div class="body__card_front">
+                                    <h1>Tarea 3</h1>
+                                </div>
+                            </div>
+                            <div class="card__back">
+                                <div class="body__card_back">
+                                    <h1>Tarea 3</h1>
+                                    <p>
+                                        Aquí creamos una pg donde unimos todo lo
+                                        aprendido hasta el momento.
+                                    </p>
+                                    <form
+                                        action="hw's/HW3/index.html"
+                                        target="_blank"
+                                    >
+                                        <input type="submit" value="Abrir" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__father">
+                        <div class="card">
+                            <div
+                                class="card__front"
+                                style="background-image: url(img/HW/HW4.png)"
+                            >
+                                <div class="bg"></div>
+                                <div class="body__card_front">
+                                    <h1>Tarea 4</h1>
+                                </div>
+                            </div>
+                            <div class="card__back">
+                                <div class="body__card_back">
+                                    <h1>Tarea 4</h1>
+                                    <p>
+                                        Aquí creamos un formulario simple usando
+                                        inputs.
+                                    </p>
+                                    <form
+                                        action="hw's/HW4/index.html"
+                                        target="_blank"
+                                    >
+                                        <input type="submit" value="Abrir" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__father">
+                        <div class="card">
+                            <div
+                                class="card__front"
+                                style="background-image: url(img/HW/HW5.png)"
+                            >
+                                <div class="bg"></div>
+                                <div class="body__card_front">
+                                    <h1>Tarea 5</h1>
+                                </div>
+                            </div>
+                            <div class="card__back">
+                                <div class="body__card_back">
+                                    <h1>Tarea 5</h1>
+                                    <p>
+                                        Aquí creamos un formulario responsive
+                                        usando "%" en el width.
+                                    </p>
+                                    <form
+                                        action="hw's/HW5/index.html"
+                                        target="_blank"
+                                    >
+                                        <input type="submit" value="Abrir" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__father">
+                        <div class="card">
+                            <div
+                                class="card__front"
+                                style="background-image: url(img/HW/HW6.png)"
+                            >
+                                <div class="bg"></div>
+                                <div class="body__card_front">
+                                    <h1>Tarea 6</h1>
+                                </div>
+                            </div>
+                            <div class="card__back">
+                                <div class="body__card_back">
+                                    <h1>Tarea 6</h1>
+                                    <p>
+                                        Aquí aprenimos de lo básico de Bootstrap
+                                        5.0
+                                    </p>
+                                    <form
+                                        action="hw's/HW6/index.html"
+                                        target="_blank"
+                                    >
+                                        <input type="submit" value="Abrir" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__father">
+                        <div class="card">
+                            <div
+                                class="card__front"
+                                style="background-image: url(img/HW/HW7.png)"
+                            >
+                                <div class="bg"></div>
+                                <div class="body__card_front">
+                                    <h1>Tarea 7</h1>
+                                </div>
+                            </div>
+                            <div class="card__back">
+                                <div class="body__card_back">
+                                    <h1>Tarea 7</h1>
+                                    <p>
+                                        Aquí usamos columnas en Boostrap 5.0 y
+                                        el efecto Parallax
+                                    </p>
+                                    <form
+                                        action="hw's/HW7/columnas.html"
+                                        target="_blank"
+                                    >
+                                        <input type="submit" value="Abrir" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__father">
+                        <div class="card">
+                            <div
+                                class="card__front"
+                                style="background-image: url(img/HW/HW8.png)"
+                            >
+                                <div class="bg"></div>
+                                <div class="body__card_front">
+                                    <h1>Tarea 8</h1>
+                                </div>
+                            </div>
+                            <div class="card__back">
+                                <div class="body__card_back">
+                                    <h1>Tarea 8</h1>
+                                    <p>
+                                        Aquí profundizamos en el uso de columnas
+                                        en Boostrap 5.0 y colores
+                                    </p>
+                                    <form
+                                        action="hw's/HW8/index.html"
+                                        target="_blank"
+                                    >
+                                        <input type="submit" value="Abrir" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__father">
+                        <div class="card">
+                            <div
+                                class="card__front"
+                                style="background-image: url(img/HW/HW9.png)"
+                            >
+                                <div class="bg"></div>
+                                <div class="body__card_front">
+                                    <h1>Tarea 9</h1>
+                                </div>
+                            </div>
+                            <div class="card__back">
+                                <div class="body__card_back">
+                                    <h1>Tarea 9</h1>
+                                    <p>
+                                        Aquí usamos Bootstrap en una forma más
+                                        completa.
+                                    </p>
+                                    <form
+                                        action="hw's/HW9/index.html"
+                                        target="_blank"
+                                    >
+                                        <input type="submit" value="Abrir" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__father">
+                        <div class="card">
+                            <div
+                                class="card__front"
+                                style="background-image: url(img/HW/HW10.png)"
+                            >
+                                <div class="bg"></div>
+                                <div class="body__card_front">
+                                    <h1>Tarea 10</h1>
+                                </div>
+                            </div>
+                            <div class="card__back">
+                                <div class="body__card_back">
+                                    <h1>Tarea 10</h1>
+                                    <p>
+                                        Aquí hacemos una página completa
+                                        unicamente con CSS.
+                                    </p>
+                                    <form
+                                        action="hw's/HW10/index.html"
+                                        target="_blank"
+                                    >
+                                        <input type="submit" value="Abrir" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__father">
+                        <div class="card">
+                            <div
+                                class="card__front"
+                                style="background-image: url(img/HW/HW11.png)"
+                            >
+                                <div class="bg"></div>
+                                <div class="body__card_front">
+                                    <h1>Tarea 11</h1>
+                                </div>
+                            </div>
+                            <div class="card__back">
+                                <div class="body__card_back">
+                                    <h1>Tarea 11</h1>
+                                    <p>
+                                        Aquí hacemos una página completa donde
+                                        usamos JS.
+                                    </p>
+                                    <form
+                                        action="hw's/HW11/index.html"
+                                        target="_blank"
+                                    >
+                                        <input type="submit" value="Abrir" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__father">
+                        <div class="card">
+                            <div
+                                class="card__front"
+                                style="background-image: url(img/HW/HW12.png)"
+                            >
+                                <div class="bg"></div>
+                                <div class="body__card_front">
+                                    <h1>Tarea 12</h1>
+                                </div>
+                            </div>
+                            <div class="card__back">
+                                <div class="body__card_back">
+                                    <h1>Tarea 12</h1>
+                                    <p>
+                                        Aquí hacemos una página completa donde
+                                        usamos JS.
+                                    </p>
+                                    <form
+                                        action="https://claudiojara.000webhostapp.com/index.html"
+                                        target="_blank"
+                                    >
+                                        <input type="submit" value="Abrir" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="contacto">
             <div class="contenido_contac">
                 <div class="descripciones">
                     <p>Correo</p>
@@ -364,13 +510,22 @@
                 </div>
                 <div class="datos">
                     <p>AT70392439@idat.edu.pe</p>
-                    <p><a href="https://www.linkedin.com/in/claudio-jara-almonacid/" target="_blank">ClaudioJara</a></p>
-                    <p><a href="https://github.com/NbdyKnows" target="_blank">NbdyKnows</a></p>
+                    <p>
+                        <a
+                            href="https://www.linkedin.com/in/claudio-jara-almonacid/"
+                            target="_blank"
+                            >ClaudioJara</a
+                        >
+                    </p>
+                    <p>
+                        <a href="https://github.com/NbdyKnows" target="_blank"
+                            >NbdyKnows</a
+                        >
+                    </p>
                 </div>
             </div>
-        
-    </footer>
+        </footer>
 
-    <script src="script/header.js"></script>
-</body>
+        <script src="script/header.js"></script>
+    </body>
 </html>
